@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>SCANDI - студия дизайна интерьера</title>
 </head>
 
@@ -35,7 +36,7 @@
       <a class="link" href="tel:+79818574624">+7 (981) 857-46-24</a>
     </nav>
     <section class="promo">
-      <h1 class="title promo__title">
+      <h1 class="promo__title">
         Поможем сделать<br>
         вашу квартиру<br>
         уютнее
@@ -109,55 +110,58 @@
         </svg>
       </a>
     </section>
-    <section class="team" id="team">
-      <h2 class="title">Команда</h2>
-      <ul class="team__list list">
-        <li class="team__item">
-          <img src="image/masha.jpg" width="320" height="253" alt="Фото Маши.">
-          <p class="team__text">
-            Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
-            и помогает сделать вашу квартиру красивой и уютной.
-          </p>
-        </li>
-        <li class="team__item">
-          <img src="image/sasha.jpg" width="320" height="253" alt="Фото Саши.">
-          <p class="team__text">
-            С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
-            и ответит на все вопросы.
-          </p>
-        </li>
-        <li class="team__item">
-          <img src="image/kate.jpg" width="320" height="253" alt="Фото Кати.">
-          <p class="team__text">
-            Катя тоже занимается дизайном.
-            Она всегда находит общий язык
-            с клиентами и точно знает,
-            как обустроить дом так, чтобы вам понравилось.
-          </p>
-        </li>
-      </ul>
-    </section>
-    <section class="work-scheme" id="work-scheme">
-      <h2 class="title">Как мы работаем</h2>
-      <ol class="work-scheme__list list">
-        <li class="work-scheme__item">
-          Знакомимся, выезжаем
-          на объект, утверждаем концепцию, подписываем договор.
-        </li>
-        <li class="work-scheme__item">
-          Подбираем мебель, текстиль, аксессуары. Делаем 3D-
-          визуализацию.
-        </li>
-        <li class="work-scheme__item">
-          Находим нужные магазины, помогаем с доставкой
-          и оплатой товаров.
-        </li>
-        <li class="work-scheme__item">
-          Воплощаем проект в жизнь:
-          расставляем мебель и цветы, вешаем шторы, находим места для мелочей
-        </li>
-      </ol>
-    </section>
+    <div class="wrapper">
+      <section class="team" id="team">
+        <h2 class="title">Команда</h2>
+        <ul class="team__list list">
+          <li class="team__item">
+            <img src="image/masha.jpg" width="320" height="253" alt="Фото Маши.">
+            <p class="team__text">
+              Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+              и помогает сделать вашу квартиру красивой и уютной.
+            </p>
+          </li>
+          <li class="team__item">
+            <img src="image/sasha.jpg" width="320" height="253" alt="Фото Саши.">
+            <p class="team__text">
+              С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все
+              документы
+              и ответит на все вопросы.
+            </p>
+          </li>
+          <li class="team__item">
+            <img src="image/kate.jpg" width="320" height="253" alt="Фото Кати.">
+            <p class="team__text">
+              Катя тоже занимается дизайном.
+              Она всегда находит общий язык
+              с клиентами и точно знает,
+              как обустроить дом так, чтобы вам понравилось.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="work-scheme" id="work-scheme">
+        <h2 class="title">Как мы работаем</h2>
+        <ol class="work-scheme__list list">
+          <li class="work-scheme__item">
+            Знакомимся, выезжаем
+            на объект, утверждаем концепцию, подписываем договор.
+          </li>
+          <li class="work-scheme__item">
+            Подбираем мебель, текстиль, аксессуары. Делаем 3D-
+            визуализацию.
+          </li>
+          <li class="work-scheme__item">
+            Находим нужные магазины, помогаем с доставкой
+            и оплатой товаров.
+          </li>
+          <li class="work-scheme__item">
+            Воплощаем проект в жизнь:
+            расставляем мебель и цветы, вешаем шторы, находим места для мелочей
+          </li>
+        </ol>
+      </section>
+    </div>
     <section class="reviews" id="reviews">
       <h2 class="title">Отзывы</h2>
       <article class="reviews__item review">
@@ -198,7 +202,7 @@
           <input type="text" id="user-name">
           <label class="feedback__phone" for="user-phone">Введите телефон</label>
           <input type="text" id="user-phone">
-          <button class="button" type="submit">Оставить заявку</button>
+          <button class="button submit-button" type="submit">Оставить заявку</button>
         </form>
       </div>
       <div class="map">
@@ -207,7 +211,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <a href="tel:+79818574624">+7 (981) 857-46-24</a>
+    <a class="link" href="tel:+79818574624">+7 (981) 857-46-24</a>
     <address>г. Санкт-петербург, ул. Большая Конюшенная, 19</address>
     <p>ИП Королёва А.А.</p>
   </footer>
